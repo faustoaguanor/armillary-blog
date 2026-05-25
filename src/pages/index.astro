@@ -12,22 +12,21 @@ const sortedPosts = allPosts.sort(
 <BlogLayout title="Inicio">
   <section class="hero">
     <div class="container">
-      <h1 class="hero-title">ARMILLARY</h1>
-      <p class="hero-desc">
-        Geospatial Analysis · Data Science · GIS Development
-      </p>
-      <div class="hero-tags">
-        <span class="hero-tag">Python</span>
-        <span class="hero-tag">GIS</span>
-        <span class="hero-tag">Data Science</span>
-        <span class="hero-tag">Geospatial</span>
-        <span class="hero-tag">Open Source</span>
+      <h1 class="hero-name">ARM<span>ILLARY</span></h1>
+      <p class="hero-sub">Geospatial Analysis · Data Science · GIS Development</p>
+      <div class="hero-dots">
+        <span class="hero-dot">Python</span>
+        <span class="hero-dot">GIS</span>
+        <span class="hero-dot">Data Science</span>
+        <span class="hero-dot">Geospatial</span>
+        <span class="hero-dot">Open Source</span>
       </div>
     </div>
   </section>
 
-  <section class="posts-list">
+  <section class="posts-section">
     <div class="container">
+      <div class="posts-section-title">Publicaciones</div>
       {sortedPosts.length > 0 ? (
         sortedPosts.map((post) => (
           <PostCard
@@ -41,7 +40,7 @@ const sortedPosts = allPosts.sort(
       ) : (
         <div class="empty-state">
           <h2>Próximamente</h2>
-          <p>Estamos preparando contenido nuevo. ¡Vuelve pronto!</p>
+          <p>Estamos preparando contenido nuevo.</p>
         </div>
       )}
     </div>

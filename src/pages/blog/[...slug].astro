@@ -29,13 +29,13 @@ const formattedDate = post.data.pubDate.toLocaleDateString("es-ES", {
           {post.data.tags && post.data.tags.length > 0 && (
             <div class="post-single-tags">
               {post.data.tags.map((tag) => (
-                <span class="post-card-tag">{tag}</span>
+                <span class="tag">{tag}</span>
               ))}
             </div>
           )}
         </div>
       </header>
-      <div class="post-content">
+      <div class="prose">
         <Content />
       </div>
     </div>
