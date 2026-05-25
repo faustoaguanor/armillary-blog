@@ -1,0 +1,43 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const formattedDate = post.data.pubDate.toLocaleDateString("es-ES", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<BlogLayout title={post.data.title} description={post.data.description}>
+  <article class="post-single">
+    <div class="container">
+      <header class="post-single-header">
+        <h1 class="post-single-title">{post.data.title}</h1>
+        <div class="post-single-meta">
+          <time datetime={post.data.pubDate.toISOString()}>{formattedDate}</time>
+          {post.data.tags && post.data.tags.length > 0 && (
+            <div class="post-single-tags">
+              {post.data.tags.map((tag) => (
+                <span class="post-card-tag">{tag}</span>
+              ))}
+            </div>
+          )}
+        </div>
+      </header>
+      <div class="post-content">
+        <Content />
+      </div>
+    </div>
+  </article>
+</BlogLayout>

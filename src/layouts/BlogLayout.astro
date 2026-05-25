@@ -1,0 +1,37 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import iconoSrc from "../assets/icono.jpeg";
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | ARMILLARY</title>
+    <meta name="description" content={description || "Geospatial Analysis · Data Science · GIS Development"} />
+    <meta name="theme-color" content="#0d1117" />
+    <link rel="icon" type="image/jpeg" href={iconoSrc.src} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description || "Geospatial Analysis · Data Science · GIS Development"} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ARMILLARY" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
