@@ -1,6 +1,7 @@
 ---
 import BlogLayout from "../layouts/BlogLayout.astro";
 import PostCard from "../components/PostCard.astro";
+import logoSrc from "../assets/logo.jpeg";
 import { getCollection } from "astro:content";
 
 const allPosts = await getCollection("posts");
@@ -12,7 +13,8 @@ const sortedPosts = allPosts.sort(
 <BlogLayout title="Inicio">
   <section class="hero">
     <div class="container">
-      <h1 class="hero-name">ARM<span>ILLARY</span></h1>
+      <img src={logoSrc.src} alt="ARMILLARY" class="hero-logo" width="72" height="72" />
+      <h1 class="hero-name">ARM<em>ILLARY</em></h1>
       <p class="hero-sub">Geospatial Analysis · Data Science · GIS Development</p>
       <div class="hero-dots">
         <span class="hero-dot">Python</span>
