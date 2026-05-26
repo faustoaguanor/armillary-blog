@@ -502,6 +502,12 @@ img { max-width: 100%; height: auto; }
   letter-spacing: 0.05em;
 }
 
+/* ── About section ── */
+.about-section {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
 /* ── Responsive ── */
 @media (max-width: 640px) {
   .hero-name { font-size: 1.6rem; letter-spacing: 0.12em; }

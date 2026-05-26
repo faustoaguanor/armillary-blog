@@ -2,7 +2,7 @@
 title: "Data Science Geoespacial"
 description: "Aplicación de técnicas de ciencia de datos a datos espaciales y análisis geoespacial"
 pubDate: 2026-06-01
-tags: ["Data Science", "Geospatial Analysis", "GIS Programming"]
+tags: ["Data Science", "Geospatial Analysis", "GIS Programming", "Data Quality"]
 ---
 
 ## Introducción
