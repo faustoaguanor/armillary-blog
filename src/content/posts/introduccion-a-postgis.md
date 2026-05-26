@@ -2,7 +2,7 @@
 title: "Introducción a PostGIS"
 description: "Primeros pasos con la extensión espacial de PostgreSQL"
 pubDate: 2026-05-29
-tags: ["ARMILLARY", "GIS", "Geospatial", "Geospatial DB", "PostGIS"]
+tags: ["ARMILLARY", "GIS", "Geospatial DB", "PostGIS"]
 ---
 
 ## ¿Qué es PostGIS?

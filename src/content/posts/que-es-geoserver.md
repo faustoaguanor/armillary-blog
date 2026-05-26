@@ -2,7 +2,7 @@
 title: "Qué es GeoServer"
 description: "Servidor de mapas OGC de código abierto y sus principales componentes"
 pubDate: 2026-05-30
-tags: ["ARMILLARY", "GIS", "Geospatial", "GIS Servers", "GeoServer"]
+tags: ["ARMILLARY", "GIS", "GIS Servers", "GeoServer"]
 ---
 
 ## Visión general

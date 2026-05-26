@@ -191,15 +191,27 @@ img { max-width: 100%; height: auto; }
 
 /* ── Tag page hero ── */
 .tag-hero {
-  background: var(--accent-soft);
-  padding: 2rem 0;
-  text-align: center;
+  padding: 1.5rem 0 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 2rem;
 }
 .tag-hero-title {
-  font-size: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   color: var(--text-bright);
+  margin-bottom: 0.35rem;
+}
+.tag-all-link {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+  display: inline-block;
+  transition: color 0.15s;
+}
+.tag-all-link:hover {
+  color: var(--accent);
 }
 
 /* ── Post cards ── */
