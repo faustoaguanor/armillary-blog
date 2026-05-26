@@ -1,10 +1,28 @@
 # ARMILLARY Blog
 
+[![GitHub Actions](https://github.com/faustoaguanor/armillary-blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/faustoaguanor/armillary-blog/actions/workflows/deploy.yml)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+[![Astro](https://img.shields.io/badge/Astro-5e9ed6?logo=astro&logoColor=white)](https://astro.build)
+[![Node.js](https://img.shields.io/badge/Node.js-20.0.0-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 **ARMILLARY** — Análisis Geoespacial · Geoestadística · Ciencia de Datos · Desarrollo SIG · Calidad de Datos ISO
 
 Blog estático construido con [Astro](https://astro.build) y hosteado en [GitHub Pages](https://pages.github.com).
 
 **URL:** [faustoaguanor.github.io/armillary-blog](https://faustoaguanor.github.io/armillary-blog)
+
+---
+
+## Tecnologías usadas
+
+Este blog está construido con las siguientes tecnologías:
+
+- **Astro** – Generador de sitios estáticos moderno.
+- **Node.js** – Entorno de ejecución JavaScript.
+- **JavaScript (ES6+)** – Lógica del sitio.
+- **GitHub Actions** – CI/CD para desplegar automáticamente en GitHub Pages.
+- **GitHub Pages** – Hosting estático gratuito.
 
 ---
 
@@ -40,8 +58,6 @@ Escribe tu contenido en **Markdown**.
 # Bloque de código
 print("Hola mundo")
 ```
-```
-
 5. Haz clic en **"Commit changes..."** → confirma con mensaje como `Add: nuevo post sobre X`
 6. El sitio se reconstruye y publica automáticamente en ~2 minutos (verás un check verde en **Actions**)
 
@@ -140,3 +156,11 @@ armillary-blog/
 - Si el sitio no se actualiza, revisa la pestaña **Actions** en GitHub para ver si hay algún error
 - Si un post no aparece, verifica que el `frontmatter` tenga formato correcto (las lineas `---` al inicio)
 - Las fechas en `pubDate` deben ser `YYYY-MM-DD` (ej: `2026-05-25`)
+
+---
+
+## Licencia
+
+Este proyecto está licenciado bajo **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Puedes compartir, adaptar y distribuir el contenido siempre que otorgues el crédito correspondiente.
+
+[Full license text](LICENSE)
