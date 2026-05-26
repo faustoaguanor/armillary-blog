@@ -2,7 +2,7 @@
 title: "JavaScript para GIS"
 description: "Desarrollo de aplicaciones GIS en el navegador con JavaScript"
 pubDate: 2026-05-27
-tags: ["ARMILLARY", "GIS", "Data Science", "JavaScript"]
+tags: ["Geospatial Analysis", "GIS Programming"]
 ---
 
 ## Por qué JavaScript es clave para GIS web

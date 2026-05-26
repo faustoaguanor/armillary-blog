@@ -2,7 +2,7 @@
 title: "Bases de Datos Geoespaciales"
 description: "Conceptos y arquitectura de bases de datos que soportan información espacial"
 pubDate: 2026-05-28
-tags: ["ARMILLARY", "GIS", "Geospatial Analysis", "Data Science", "Geospatial DB"]
+tags: ["Geospatial Analysis", "Data Science", "Geospatial DB"]
 ---
 
 ## ¿Qué es una base de datos geoespacial?

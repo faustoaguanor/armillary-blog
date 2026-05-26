@@ -2,7 +2,7 @@
 title: "Python para GIS"
 description: "Uso de Python en análisis y procesamiento geoespacial"
 pubDate: 2026-05-26
-tags: ["ARMILLARY", "GIS", "Geospatial Analysis", "Data Science", "Python"]
+tags: ["Geospatial Analysis", "Data Science", "GIS Programming"]
 ---
 
 ## Introducción

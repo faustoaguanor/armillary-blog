@@ -2,7 +2,7 @@
 title: "Linux para GIS"
 description: "Uso de Linux como plataforma base para herramientas y flujos GIS"
 pubDate: 2026-05-31
-tags: ["ARMILLARY", "GIS", "GIS Desktop", "Linux"]
+tags: ["GIS Desktop", "Geospatial Analysis", "GIS Programming"]
 ---
 
 ## Por qué Linux es el entorno favorito de la comunidad GIS
