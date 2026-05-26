@@ -15,7 +15,7 @@ Blog estático construido con [Astro](https://astro.build) y hosteado en [GitHub
 1. Ve a tu repositorio → `src/content/posts/` (ruta: `https://github.com/faustoaguanor/armillary-blog/tree/main/src/content/posts/`)
 2. Haz clic en **"Add file" → "Create new file"**
 3. Nombra el archivo: `mi-post.md`  
-   *(usa solo letras minúsculas, guiones, sin espaces ni tildes, ejemplo: `diccionarios-python.md`)*
+   *(usa solo letras minúsculas, guiones, sin espacios ni tildes, ejemplo: `diccionarios-python.md`)*
 4. Pega esta plantilla:
 
 ```markdown
@@ -101,7 +101,7 @@ Sube la imagen al mismo directorio del post o a `public/images/` y referencias a
 ![Descripción](URL-o-ruta-relativa)
 ```
 
-**Nota:** El blog usa `base: "/armillary-blog"` en la configuración. Los links internos deben empezzar con `/armillary-blog/...`.
+**Nota:** El blog usa `base: "/armillary-blog"` en la configuración. Los links internos deben empezar con `/armillary-blog/...`.
 
 ---
 
