@@ -189,6 +189,19 @@ img { max-width: 100%; height: auto; }
   opacity: 1;
 }
 
+/* ── Tag page hero ── */
+.tag-hero {
+  background: var(--accent-soft);
+  padding: 2rem 0;
+  text-align: center;
+}
+.tag-hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-bright);
+}
+
 /* ── Post cards ── */
 .posts-section {
   padding: 0 0 5rem;

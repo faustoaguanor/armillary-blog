@@ -2,7 +2,7 @@
 title: "Bienvenida a ARMILLARY"
 description: "Análisis geoespacial, geoestadística, ciencia de datos, desarrollo SIG y calidad de datos conforme a estándares internacionales ISO"
 pubDate: 2026-05-25
-tags: ["ARMILLARY", "GIS", "Geospatial", "Data Quality", "ISO 19157"]
+tags: ["ARMILLARY", "GIS", "Geospatial", "Data Science", "GIS Programming", "Data Quality", "Geospatial DB", "GIS Desktop", "GIS Servers", "ISO 19157"]
 ---
 
 ## ¿Qué es ARMILLARY?

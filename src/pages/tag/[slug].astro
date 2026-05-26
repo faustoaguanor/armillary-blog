@@ -1,0 +1,50 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  const tagSet = new Set<string>();
+  posts.forEach((post) => {
+    if (post.data.tags) {
+      post.data.tags.forEach((t) => tagSet.add(t));
+    }
+  });
+  // Generamos una ruta por cada etiqueta única
+  return Array.from(tagSet).map((tag) => ({
+    params: { slug: tag.toLowerCase().replace(/\s+/g, "-") },
+    props: { tag },
+  }));
+}
+
+const { tag } = Astro.props;
+const allPosts = await getCollection("posts");
+const filtered = allPosts.filter((post) => post.data.tags?.includes(tag));
+---
+
+<BlogLayout title={`Tag: ${tag}`} description={`Artículos etiquetados como ${tag}`}>
+  <section class="tag-hero">
+  <div class="container">
+    <h1 class="tag-hero-title">{tag}</h1>
+  </div>
+</section>
+<section class="posts-section">
+    <div class="container">
+      <div class="posts-section-title">{tag}</div>
+      {filtered.length > 0 ? (
+        filtered.map((post) => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            pubDate={post.data.pubDate}
+            url={`/armillary-blog/blog/${post.slug}/`}
+            tags={post.data.tags}
+          />
+        ))
+      ) : (
+        <p class="empty-state">No hay publicaciones bajo esta etiqueta.</p>
+      )}
+    </div>
+  </section>
+</BlogLayout>
